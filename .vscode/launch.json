@@ -1,0 +1,22 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI Debug",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "app.main:app", // 如果你的入口文件是 main.py，FastAPI 实例是 app
+        "--reload", // 自动重载
+        "--port",
+        "8000" // 可选：指定端口
+      ],
+      "jinja": true,
+      "justMyCode": false
+    }
+  ]
+}
