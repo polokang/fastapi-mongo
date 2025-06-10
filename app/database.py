@@ -1,9 +1,9 @@
-from motor.motor_asyncio import AsyncIOMotorClient
-from typing import Optional
+from typing import Optional, Any
 from .config import get_settings
+from motor.motor_asyncio import AsyncIOMotorClient
 
 class Database:
-    client: Optional[AsyncIOMotorClient] = None
+    client: Optional[Any] = None
     settings = get_settings()
     
     @classmethod

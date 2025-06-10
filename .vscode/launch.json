@@ -16,7 +16,10 @@
         "8000" // 可选：指定端口
       ],
       "jinja": true,
-      "justMyCode": false
+      "justMyCode": false,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
     }
   ]
 }
